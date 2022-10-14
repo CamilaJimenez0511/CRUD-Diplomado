@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Inventario</title>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/65287f2240.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark navbar-expand-sm bg-dark fixed-top mb-5">
+        <div class="container">
+            <div id="navbarCollapse" class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="inventario.html" class="nav-link active">Inventario</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-4 mt-5">
+                <div class="card">
+                    <div class="card_header bg-primary">
+                        <h3 class="text-center">Registro de productos</h3>
+                    </div>
+                    <div class="card-body">
+                        <form action="" id="frm">
+                            <div class="form-group">
+                                <input type="hidden" name="idp" id="idp" value="">
+                                <input type="text" name="codigo" id="codigo" placeholder="Código" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="producto" id="producto" placeholder="Producto" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="precio" id="precio" placeholder="Precio" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="cantidad" id="cantidad" placeholder="Cantidad" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <input type="button" value="Ingresar" id="ingresar" class="btn btn-primary btn-block">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8 mt-5">
+                <div class="row">
+                    <div class="col-lg-6 ml-auto">
+                        <form action="">
+                            <div class="form-group">
+                                <input type="text" name="buscar" id="buscar" placeholder=Buscar.. class="form-control">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <table class="table table-hover table-striped tableFixHead">
+                    <thead class="thead-dark text-center">
+                        <tr>
+                            <th>Código</th>
+                            <th>Producto</th>
+                            <th>Precio</th>
+                            <th>Cantidad</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody id="resultado" class="text-center">
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="../js/script.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>
